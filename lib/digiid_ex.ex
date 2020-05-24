@@ -28,7 +28,7 @@ defmodule DigiID do
   end
 
   @doc """
-  generates the uri for a DigiID qrcode
+  generates the uri for a DigiID qrcode using google charts
   """
   def qrcode(digiid) do
     # google chart query string params
