@@ -25,6 +25,7 @@ defmodule DigiID do
     |> Map.put(:scheme, @scheme)
     |> Map.put(:query, URI.encode_query(params))
     |> URI.to_string()
+    |> String.replace([":443", ":80"], "")
   end
 
   @doc """
